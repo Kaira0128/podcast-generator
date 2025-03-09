@@ -1,0 +1,14 @@
+From ubuntu:latest
+
+Run apt-get update && apt-get install -y \
+    python3.10 \
+    pyhton3-pip \
+    git
+
+Run pip3 install PyYAML
+
+Copy fee.py /usr/bin/feed.py
+
+Copy evtrypoint.sh /entrypoint.sh
+
+Entrypoint ["entrypoint.sh"]
